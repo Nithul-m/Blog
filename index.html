@@ -7,13 +7,19 @@
   <title>Front End Technologies - Home</title>
   <!-- Link Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .row{
+      margin-right: 0px;
+    }
+  </style>
 </head>
 
 <body>
   <!-- Navigation bar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Front End Technologies</a>
+      <a class="navbar-brand" href="index.html"> <img id="logo" src="data:image/jpeg;base64,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" alt=""> Front End Technologies</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -37,15 +43,90 @@
             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
           </svg>
       </div>
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
     </div>
     
   </nav>
 
   <!-- Main content -->
-  <div class="container">
+  <div class="container-fluid">
     <h1>Welcome to Front End Technologies Blog!</h1>
     <p>This blog provides information about the latest trends and technologies in front-end development.</p>
   </div>
+
+  <div class="row">
+    <div class="col-md-6" id="firstCard">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title" ><img id="html5" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png"></h5> 
+          <p class="card-text">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+          <a href="https://html.com/" class="btn btn-primary">Know more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6" id="secondCard">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><img id="css" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/800px-CSS3_logo_and_wordmark.svg.png" alt=""></h5>
+          <p class="card-text">Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+          <a href="https://www.w3schools.com/css/default.asp" class="btn btn-primary">Know more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6" id="firstCard">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title" ><img id="html5" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Javascript_badge.svg/219px-Javascript_badge.svg.png?20160504163251"></h5> 
+          <p class="card-text">JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2023, 98.7% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.</p>
+          <a href="https://javascript.info/" class="btn btn-primary">Know more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 ml-auto" id="secondCard">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><img id="react" src="https://www.nethues.com/blog/app/uploads/2019/02/React.js-vs-React-Native.png" ></h5>
+          <p class="card-text">React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on components. It is maintained by Meta and a community of individual developers and companies. React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js.</p>
+          <a href="https://legacy.reactjs.org/docs/getting-started.html" class="btn btn-primary">Know more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar bg-body-tertiary">
+    <div class="container" id="nav">
+      <a class="navbar-brand" href="https://www.facebook.com/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+        </svg> 
+       </a> 
+       <a class="navbar-brand" href="https://www.instagram.com/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+        </svg>
+       </a>
+       <a class="navbar-brand" href="https://github.com/Nithul-m">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+        </svg>
+       </a>
+        <a class="navbar-brand" href="https://www.linkedin.com/in/nithul-m-31b7b8264/">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+          <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+        </svg>
+       </a>
+    </div>
+  </nav>
 
   <!-- Link Bootstrap JS at the end of the body -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>

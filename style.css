@@ -1,0 +1,28 @@
+#firstCard{
+    
+    margin-top: 50px;
+}
+#secondCard{
+    margin-top: 50px;
+}
+#html5{
+    width: 25%;
+    height: 25%;
+}
+#css{
+    width: 17.5%;
+    height: 17.5%;
+}
+#react{
+    width: 57.5%;
+    height: 57.5%;
+}
+#logo{
+    width: 12%;
+    height: 12%;
+}
+#nav{
+    background-color: rgb(88, 88, 90);
+    
+    
+}
