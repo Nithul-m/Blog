@@ -34,7 +34,7 @@ function validatePassword(){
 function validateForm(){
     let subError = document.getElementById('subError')
     if(!validateEmail() || !validatePassword() ){
-        alert('Please resolve the errors');
+        subError.innerHTML='Please resolve the errors'
         return false
     }else{
         subError.innerHTML=''
