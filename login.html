@@ -65,7 +65,7 @@
           <h4>Login</h4>
         </div>
         <div class="card-body">
-          <form id="loginForm" onsubmit="validateForm()">
+          <form id="loginForm" >
             <div class="form-group">
               <label for="email">Email</label>
               <input type="email" class="form-control" id="email" onkeyup="validateEmail()" placeholder="Enter your email" required>
@@ -77,7 +77,7 @@
               <span id="passwordError"></span>
             </div>
             <br>
-            <button type="submit" class="btn btn-primary btn-block">Log In</button>
+            <button  type="submit" onclick="validateForm()" class="btn btn-primary btn-block">Log In</button>
             <span id="subError"></span>
             </form>
           <p class="mt-3">Don't have an account? <a href="signup.html">Sign up</a></p>
